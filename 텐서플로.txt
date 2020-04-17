@@ -1,0 +1,32 @@
+텐서플로우 : 
+
+다운로드
+https://www.tensorflow.org/
+https://www.anaconda.com/
+https://www.jetbrains.com/ko-kr/pycharm/download/#section=windows
+
+설치 
+
+환경 설정
+ANACONDA_HOME1 : C:\ProgramData\Anaconda3
+ANACONDA_HOME2 : C:\ProgramData\Anaconda3\Scripts
+ANACONDA_HOME3 : C:\ProgramData\Anaconda3\Library\bin
+ANACONDA_HOME4 : C:\ProgramData\Anaconda3\Library\mingw-w64\bin
+
+path
+%ANACONDA_HOME1%
+%ANACONDA_HOME2%
+%ANACONDA_HOME3%
+%ANACONDA_HOME4%
+
+설치 확인 
+윈도우 + R =>   conda --varsion
+
+===========================================
+파이썬 클래스
+파이썬의 getter와 setter 학습
+파이썬의 데코레이터 학습
+
+
+
+
