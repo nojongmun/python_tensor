@@ -7,6 +7,7 @@ if __name__ == '__main__':
         print('2, Tensor Calculator')
         return input('메뉴 선택 \n')
 
+
     while 1:
         menu = print_menu()
         if menu == '0':

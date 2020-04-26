@@ -1,7 +1,6 @@
 from titanic.model import Titanic
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
-
 class Controller:
     def __init__(self):
         self._titanic = Titanic()
@@ -37,6 +36,9 @@ class Controller:
         test_id = titanic.test_id
         clf = RandomForestClassifier()
         clf.fit(model, dummy)
+        print(model.info)
         prediction = clf.predict(test)
         submission = pd.DataFrame({'PassengerId': test_id, 'Survived':prediction})
         submission.to_csv('./data/submission.csv', index=False)
+
+
