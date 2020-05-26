@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI 배추가격 예측</title>
+</head>
+<body>
+    <form action="/cabbage" method="post">
+        평균기온 : <input type="text" name="avgTemp" placeholder="평균온도: 10" > <br>
+        최저온도 : <input type="text" name="minTemp" placeholder="최저온도: -5" > <br>
+        최고온도 : <input type="text" name="maxTemp" placeholder="최고온도: 20" > <br>
+        강우량 : <input type="text" name="rainFall" placeholder="강수량: 0.8" > <br>
+        <br><br>
+        <input type="submit" value="전 송">
+    </form>
+
+{% if result %}
+<p> 결과 :  {{result}} </p>
+{% endif %}
+<h4>예시값으로 예측된 배추가격은 : 5946</h4>
+</body>
+</html>

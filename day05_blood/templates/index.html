@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI 혈중 지방 농도</title>
+</head>
+<body>
+    <form action="/blood" method="post">
+        몸무게 : <input type="text" name="weight"> <br>
+        나이 : <input type="text" name="age"> <br>
+        <br><br>
+        <input type="submit" value="전 송">
+    </form>
+<!-- 진자 (파이썬언어)-->
+{% if result %}
+<p> 결과 :  {{result}} </p>
+{% endif %}
+</body>
+</html>

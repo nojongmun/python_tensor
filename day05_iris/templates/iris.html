@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI 아이리스</title>
+</head>
+<body>
+    <!--sepal_length=5.1&sepal_width=3.5&petal_length=1.4&petal_width=0.2-->
+    <form action="/iris" method="post">
+        꽃받침 길이 : <input type="text" name="sepal_length" > <br>
+        꽃받침 넓이 : <input type="text" name="sepal_width" > <br>
+        꽃잎 길이 : <input type="text" name="petal_length" > <br>
+        꽃잎 넓이 : <input type="text" name="petal_width" > <br>
+        <br><br>
+        <input type="submit" value="전 송">
+    </form>
+
+{% if result %}
+<p> 결과 :  {{result}} </p>
+{% endif %}
+</body>
+</html>
